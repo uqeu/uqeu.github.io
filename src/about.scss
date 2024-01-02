@@ -52,14 +52,14 @@ section {
 }
 
 #secondary-image-track > .image {
-  width: 40vmin;
+  width: 60vmin;
   object-fit: cover;
   object-position: 100% center;
 }
 
 #image-track {
   display: flex;
-  gap: 10vmin;
+  gap: 5vmin;
   position: absolute; left: 50%; top: 50%; transform: translate(0%, -50%);
   user-select: none;
 }
@@ -174,4 +174,21 @@ h2 {
   text-rendering: optimizeLegibility;
   color: #FFFFFF;
   mix-blend-mode: exclusion;
+}
+
+canvas {
+  display: block;
+} /* ---- particles.js container ---- */
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("");
+  background-repeat: repeat;
+  background-color:#000000;
+  background-position: 0% 0%;
+  z-index: -100;
 }
