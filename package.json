@@ -16,5 +16,8 @@
     "sass": "^1.69.5",
     "typescript": "^5.3.3",
     "vite": "^5.0.8"
+  },
+  "dependencies": {
+    "particles.js": "^2.0.0"
   }
 }
