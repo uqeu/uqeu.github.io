@@ -112,8 +112,8 @@ particlesJS("particles-js", {
   interactivity: {
     detect_on: "window",
     events: {
-      onhover: { enable: false, mode: "repulse" },
-      onclick: { enable: false, mode: "remove" },
+      onhover: { enable: true, mode: "repulse" },
+      onclick: { enable: true, mode: "push" },
       resize: true
     },
     modes: {
