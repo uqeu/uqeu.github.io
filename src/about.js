@@ -1,5 +1,4 @@
 import { transform } from 'typescript';
-import './about.scss';
 
 const track = document.getElementById("image-track");
 
