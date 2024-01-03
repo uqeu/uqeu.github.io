@@ -22,7 +22,6 @@ section {
   z-index: 10; }
 
 #secondary-image-track-wrapper {
-  height: 78vmin;
   z-index: 300;
   /* Adjust this value as needed */ }
 
@@ -33,8 +32,8 @@ section {
   object-position: 50% center; }
 
 #secondary-image-track > .video {
-  width: 52vmin;
-  height: 80vmin;
+  width: 65vmin;
+  height: 70vmin;
   object-fit: cover;
   object-position: 50% center; }
 
@@ -44,7 +43,7 @@ section {
   object-position: 100% center; }
 
 #secondary-image-track > .image {
-  width: 60vmin;
+  width: 70vmin;
   object-fit: cover;
   object-position: 100% center; }
 
@@ -59,7 +58,7 @@ section {
 
 #secondary-image-track {
   display: flex;
-  gap: 10vmin;
+  gap: 7vmin;
   position: absolute;
   left: 50%;
   top: 50%;
