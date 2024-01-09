@@ -131,11 +131,11 @@ section {
     min-height: 100vh;
 }
 
-.a1{
+.a1 {
 animation:blinking 5s infinite;
 }
 
-.a2{
+.a2 {
 animation:blinking2 10s infinite;
 transform: scaleY(5) 10s infinite;
 }
@@ -178,14 +178,14 @@ transform: scaleY(5) 10s infinite;
 :root {
     --color-bg1: rgb(0, 0, 0);
     --color-bg2: rgb(0,0,0);
-    --color1: (255,255,255);
-    --color2: (255,255,255);
-    --color3: (255,255,255);
-    --color4: (255,255,255);
-    --color5: (255,255,255);
-    --color-interactive: (255,255,255);
+    --color1: 255,255,255;
+    --color2: 255,255,255;
+    --color3: 255,255,255;
+    --color4: 255,255,255;
+    --color5: 255,255,255;
+    --color-interactive: 255,255,255;
     --circle-size:  80%;
-    --blending: exclusion;
+    --blending: difference;
 }
 
 @keyframes moveInCircle {

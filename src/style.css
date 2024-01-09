@@ -146,14 +146,14 @@ section {
 :root {
   --color-bg1: rgb(0, 0, 0);
   --color-bg2: rgb(0,0,0);
-  --color1: (255,255,255);
-  --color2: (255,255,255);
-  --color3: (255,255,255);
-  --color4: (255,255,255);
-  --color5: (255,255,255);
-  --color-interactive: (255,255,255);
+  --color1: 255,255,255;
+  --color2: 255,255,255;
+  --color3: 255,255,255;
+  --color4: 255,255,255;
+  --color5: 255,255,255;
+  --color-interactive: 255,255,255;
   --circle-size:  80%;
-  --blending: exclusion; }
+  --blending: difference; }
 
 @keyframes moveInCircle {
   0% {
