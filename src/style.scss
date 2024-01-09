@@ -176,16 +176,16 @@ transform: scaleY(5) 10s infinite;
 
 
 :root {
-    --color-bg1: rgb(0, 0, 0);
-    --color-bg2: rgb(0,0,0);
-    --color1: 255,255,255;
-    --color2: 255,255,255;
-    --color3: 255,255,255;
-    --color4: 255,255,255;
-    --color5: 255,255,255;
-    --color-interactive: 255,255,255;
-    --circle-size:  80%;
-    --blending: difference;
+    --color-bg1: #7a8691;
+    --color-bg2: rgb(80 78 78);
+    --color1: 181,208,255;
+    --color2: 171,178,212;
+    --color3: 207,191,255;
+    --color4: 248,188,248;
+    --color5: 255,224,250;
+    --color-interactive: 204,249,255;
+    --circle-size:  85%;
+    --blending: screen;
 }
 
 @keyframes moveInCircle {
