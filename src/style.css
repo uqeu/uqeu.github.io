@@ -153,8 +153,7 @@ section {
   --color5: (255,255,255);
   --color-interactive: (255,255,255);
   --circle-size:  80%;
-  --blending: exclusion; 
-}
+  --blending: exclusion; }
 
 @keyframes moveInCircle {
   0% {
