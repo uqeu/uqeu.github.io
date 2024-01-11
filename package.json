@@ -9,7 +9,8 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "scss:watch": "node-sass --watch src/about.scss src/about.css",
-    "scss:watch2": "node-sass --watch src/style.scss src/style.css"
+    "scss:watch2": "node-sass --watch src/style.scss src/style.css",
+    "scss:watch3": "node-sass --watch src/cubes.scss src/cubes.css"
   },
   "devDependencies": {
     "node-sass": "^9.0.0",
