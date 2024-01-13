@@ -12,8 +12,10 @@
 
         </head>
 
-        <body class="blur">
-            <div class="wrapper">
+        <body>
+
+        <div class = "container">
+            <div class="wrapper blur">
                 <div class="cube">
                     <div class="top"> </div>
                     <div class="bottom"> </div>
@@ -25,5 +27,57 @@
                     </div>
                 </div>
             </div>
+
+            <div class="wrapperflipped blur">
+                <div class = "rotate">
+                <div class="cube">
+                    <div class="top"> </div>
+                    <div class="bottom"> </div>
+                    <div>
+                        <span style="--i:0;"></span>
+                        <span style="--i:1;"></span>
+                        <span style="--i:2;"></span>
+                        <span style="--i:3;"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <svg width="0" height="0">
+            <filter id="kill">
+              <feColorMatrix type="matrix" 
+                result="red_"             
+                values="1 0 0 0 0
+                        0 0 0 0 0 
+                        0 0 0 0 0 
+                        0 0 0 1 0"/>
+              <feOffset in="red_" dx="2" dy="0" result="red"/>
+              <feColorMatrix type="matrix" 
+                in="SourceGraphic"             
+                result="blue_"             
+                values="0 0 0 0 0
+                        0 1 0 0 0 
+                        0 0 10 0 0 
+                        0 0 0 1 0"/>
+              <feOffset in="blue_" dx="-3" dy="0" result="blue"/>    
+              <feBlend mode="screen" in="red" in2="blue"/>
+          
+            </filter>
+          </svg>
+
+         <section>
+            <h2 class = "neon"> Testing 2</h2>
+            <p> This is some basic text 2 </p>    
+        </section>
+        
+        <section>
+            <h2 class = "neon"> Testing 3</h2>
+            <p> This is some basic text 3 </p>
+        </section>
+
+
+            
         </body>
+        
 </html>
+
