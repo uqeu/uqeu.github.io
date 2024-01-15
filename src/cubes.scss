@@ -46,14 +46,6 @@ section {
 .rotate {
     transform: rotateY(-180deg);
 }
-.cube {
-    position: relative;
-    width: 30px;
-    height: 30px;
-    transform-style: preserve-3d;
-    transform: rotateX(-30deg);
-    animation: animate 4s linear infinite;
-}
 
 .wrapper {
     position: absolute;
@@ -66,6 +58,8 @@ section {
     left: 20%; /* Adjust this value to move the div to the right */
     top: 95%; /* Adjust this value to move the div downwards */
 }
+
+
 @keyframes animate
 {
     0%
@@ -81,6 +75,17 @@ section {
         transform: rotateX(-30deg) rotateY(360deg);
     }
 }
+
+.cube {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: animate 4s linear infinite;
+}
+
+
 
 .cube div 
 {
@@ -125,7 +130,100 @@ section {
     transform: rotateX(-90deg) translateZ(-15px);
 }
 
-/* .top::before
+/* big cube */
+@keyframes biganimate
+{
+    0%
+    {
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    50%
+    {
+        transform: rotateX(-15deg) rotateY(180deg);
+    }
+    100%
+    {
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+
+.bigcube {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    transform-style: preserve-3d;
+    transform: rotateX(20deg);
+    animation: biganimate 8s linear infinite;
+}
+
+
+
+.bigcube div 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 180px;
+    transform-style: preserve-3d;
+}
+
+.bigcube div span 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    transform: rotateY(calc(90deg * var(--ib))) translateZ(90px);
+}
+
+.bigtop
+{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 180px;
+    height: 180px;
+    background: #ffffff;
+    transform: rotateX(-90deg) translateZ(90px);
+}
+
+.bigbottom 
+{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 180px;
+    height: 180px;
+    background: #ffffff;
+    transform: rotateX(-90deg) translateZ(-90px);
+}
+
+
+.bigwrapper {
+    position: absolute;
+    left: 65%; /* Adjust this value to move the div to the right */
+    top: 25%; /* Adjust this value to move the div downwards */
+}
+
+.bigcontainer {
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+/* .top::before shadow on the ground or something
 {
     content: '';
     position: absolute;
