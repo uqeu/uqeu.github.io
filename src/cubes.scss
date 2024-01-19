@@ -1,14 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     display: flex;
     justify-content: center;
-    min-height: 100vh;
-    background: #050505;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
 }
 
 h2 {
@@ -19,46 +14,12 @@ h2 {
     mix-blend-mode: exclusion;
 }
 
-.container {
-    width: 100vw; /* 100% of the viewport width */
-    height: 100vh; /* 100% of the viewport height */
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-section {
-    display: grid;
-    place-items: center;
-    align-items: center;
-    min-height: 100vh;
-}
 
 .blur {
-    filter: blur(1.1px);
+    filter: blur(0.6px);
 }
 
-.kill {
-    position: relative;
-    -webkit-filter: url(#kill) blur(1.1px);
-  }
   
-.rotate {
-    transform: rotateY(-180deg);
-}
-
-.wrapper {
-    position: absolute;
-    left: 20%; /* Adjust this value to move the div to the right */
-    top: 5%; /* Adjust this value to move the div downwards */
-}
-
-.wrapperflipped {
-    position: absolute;
-    left: 20%; /* Adjust this value to move the div to the right */
-    top: 95%; /* Adjust this value to move the div downwards */
-}
-
 
 @keyframes animate
 {
@@ -77,15 +38,13 @@ section {
 }
 
 .cube {
-    position: relative;
+    position: absolute;
     width: 30px;
     height: 30px;
     transform-style: preserve-3d;
     transform: rotateX(-30deg);
     animation: animate 4s linear infinite;
 }
-
-
 
 .cube div 
 {
@@ -135,24 +94,23 @@ section {
 {
     0%
     {
-        transform: rotateX(-30deg) rotateY(0deg);
+        transform: rotateX(90deg) rotateY(360deg);
     }
     50%
     {
-        transform: rotateX(-15deg) rotateY(180deg);
+        transform: rotateX(-90deg) rotateY(180deg);
     }
     100%
     {
-        transform: rotateX(-30deg) rotateY(360deg);
+        transform: rotateX(90deg) rotateY(360deg);
     }
 }
 
 .bigcube {
-    position: relative;
-    width: 180px;
-    height: 180px;
+    position: absolute;
+    width: 360px;
+    height: 360px;
     transform-style: preserve-3d;
-    transform: rotateX(20deg);
     animation: biganimate 8s linear infinite;
 }
 
@@ -163,8 +121,8 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    width: 180px;
-    height: 180px;
+    width: 360px;
+    height: 360px;
     transform-style: preserve-3d;
 }
 
@@ -176,7 +134,7 @@ section {
     width: 100%;
     height: 100%;
     background: #ffffff;
-    transform: rotateY(calc(90deg * var(--ib))) translateZ(90px);
+    transform: rotateY(calc(90deg * var(--ib))) translateZ(180px);
 }
 
 .bigtop
@@ -184,10 +142,10 @@ section {
     position: absolute;
     top:0;
     left: 0;
-    width: 180px;
-    height: 180px;
+    width: 360px;
+    height: 360px;
     background: #ffffff;
-    transform: rotateX(-90deg) translateZ(90px);
+    transform: rotateX(-90deg) translateZ(180px);
 }
 
 .bigbottom 
@@ -195,26 +153,59 @@ section {
     position: absolute;
     top:0;
     left: 0;
-    width: 180px;
-    height: 180px;
+    width: 360px;
+    height: 360px;
     background: #ffffff;
-    transform: rotateX(-90deg) translateZ(-90px);
+    transform: rotateX(-90deg) translateZ(-180px);
 }
 
 
 .bigwrapper {
     position: absolute;
-    left: 65%; /* Adjust this value to move the div to the right */
+    left: 25%; /* Adjust this value to move the div to the right */
     top: 25%; /* Adjust this value to move the div downwards */
 }
 
-.bigcontainer {
-    width: 100vw; /* 100% of the viewport width */
-    height: 100vh; /* 100% of the viewport height */
-    position: absolute;
-    top: 0;
-    left: 0;
+
+.reflect-top {
+    height: 65vh;
+    width: 100vw;
+    background: radial-gradient(circle, rgb(255,214,10), rgb(15,15,15));
 }
+
+.reflect-bottom {
+    height: 35vh;
+    width: 100vw;
+    background: radial-gradient(circle, rgb(255,214,10), rgb(15,15,15));
+}
+
+
+.cubewrapper {
+    position: absolute;
+    margin-top: 00px;
+
+    video {
+        width: 500px;
+        -webkit-box-reflect: below 100px linear-gradient(transparent, rgba(255,255,255,0.8));
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
